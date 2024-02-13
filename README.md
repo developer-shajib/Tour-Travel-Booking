@@ -74,7 +74,7 @@ Contributions are welcome! If you have any suggestions or improvements, please c
 Backend: deployed in Render
 Frontend: deployed in Netlify
 
-[Live Link](https://tours-and-travels-booking.netlify.app)
+[Live Link](https://tour-travel-booking.vercel.app)
 
 ## License
 
