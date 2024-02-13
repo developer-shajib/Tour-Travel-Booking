@@ -1,0 +1,89 @@
+.search__bar {
+  padding: 0.3rem 1rem;
+  border-radius: 50px;
+  box-shadow: rgba(164, 78, 78, 0.6) 0px 48px 100px 0px !important;
+  width: max-content;
+  margin-top: 50px;
+  background-color: #f1dec9;
+
+  .form__group {
+    span {
+      font-size: 1.8rem;
+      color: var(--secondary-color);
+    }
+    input {
+      border: none;
+      font-size: 0.9rem;
+      color: var(--heading-color);
+      font-weight: 500;
+      margin-top: 10px;
+      background: transparent;
+      border-bottom: 1px solid var(--secondary-color);
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    h6 {
+      margin-bottom: 0;
+      font-size: 20px;
+    }
+  }
+
+  .form__group-fast {
+    border-right: 2px solid #ddd;
+  }
+
+  .search__icon {
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    background: var(--secondary-color);
+    color: #fff;
+    border-radius: 10px 5px 10px 5px;
+  }
+}
+
+// ================== Making Responsive ==============
+@media only screen and (max-width: 992px) {
+  .search__bar {
+    width: 100%;
+    border-radius: 1rem;
+
+    form {
+      flex-wrap: wrap;
+
+      .form__group {
+        width: 48%;
+      }
+
+      .search__icon {
+        width: 140px;
+        text-align: center;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .search__bar {
+    form {
+      .form__group {
+        width: 100%;
+
+        span {
+          svg {
+            font-size: 2.1rem;
+          }
+        }
+
+        input {
+          font-size: 0.8rem;
+        }
+
+        h6 {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

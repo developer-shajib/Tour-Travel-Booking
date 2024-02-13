@@ -1,0 +1,137 @@
+.header {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+
+  .logo {
+    img {
+      width: 30%;
+    }
+  }
+
+  .menu {
+    margin-bottom: 0;
+
+    .nav_item {
+      a {
+        text-decoration: none;
+        color: var(--heading-color);
+        font-weight: 500;
+        font-size: 1.1rem;
+        transition: 0.3s;
+
+        &:hover {
+          color: var(--secondary-color);
+        }
+      }
+      .active {
+        color: var(--secondary-color);
+      }
+    }
+  }
+
+  .mobile__menu {
+    font-size: 1.3rem;
+    color: var(--heading-color);
+    display: none;
+  }
+}
+
+.login_btn {
+  border: 1px solid var(--secondary-color) !important;
+  border-radius: 20px !important;
+  padding: 4px 25px !important;
+
+  a {
+    color: var(--secondary-color) !important;
+  }
+}
+
+.sticky__header {
+  width: 100%;
+  height: 90px;
+  line-height: 80px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 8px -3px #ddd;
+  z-index: 999;
+  transition: 0.3s;
+
+  .logo {
+    width: 13%;
+
+    img {
+      width: 100%;
+      background-size: cover;
+    }
+  }
+}
+
+// ================== Making Responsive ==============
+@media only screen and (max-width: 1200px) {
+  .navigation {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .logo {
+    img {
+      width: 20%;
+    }
+  }
+
+  .navigation {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #00000046;
+    z-index: 999;
+    display: none;
+
+    .menu {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: calc(100% - 75%);
+      height: 100%;
+      background: #fff;
+      flex-direction: column;
+      line-height: 0.5rem;
+      justify-content: center;
+      z-index: 999;
+    }
+  }
+  .show__menu {
+    display: block;
+  }
+  .mobile__menu {
+    display: block !important;
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    img {
+      width: 45% !important;
+    }
+  }
+  .navigation {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    .menu {
+      width: calc(100% - 60%);
+    }
+  }
+}

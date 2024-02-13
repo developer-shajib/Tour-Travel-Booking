@@ -1,0 +1,19 @@
+.thank__you {
+  span {
+    svg {
+      font-size: 4rem;
+      color: green;
+    }
+  }
+
+  h1 {
+    font-size: 5rem;
+    font-family: var(--subtitle-font-name);
+    color: green;
+  }
+  h3 {
+    color: green;
+    font-style: italic;
+    font-size: 1.3rem;
+  }
+}
